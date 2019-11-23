@@ -1,8 +1,8 @@
 # Go lang project example for manipulate a Matrix using REST API
 
-In main.go you will find a basic web server written in GoLang. It accepts a single request _/echo_. 
+In main.go you will find a basic web server written in GoLang. 
 
-The webservice has the ability to perform the following operations
+The webservice has the ability to perform the following operations:
 
 Given an uploaded csv file
 ```
@@ -49,23 +49,34 @@ Given an uploaded csv file
 
 The input file to these functions is a matrix, of any dimension where the number of rows are equal to the number of columns (square). Each value is an integer, and there is no header row. matrix.csv is example valid input.  
 
-Run web server
-```
-go run .
-```
+## Instructions
 
-Send request, for example
+Prerequisite:
 ```
-curl -F 'file=@/path/matrix.csv' "localhost:8080/echo"
+    Install go https://golang.org/dl/
 ```
-
-Run Unit Tests
+1. Clone or download this repository 
+```
+git clone https://github.com/ravasconcelos/go_matrix_rest.git
+```
+2. Go to the project folder
+```
+cd go_matrix_rest
+```
+3. Run the unit tests
 ```
 go test
 ```
-
-Run Unit Tests
+4. Run web server
+```
+go run . &
+```
+5. Run the funcional tests
 ```
 cd functional_testing
 ./send_requests.sh
+```
+6. Send other requests if you want, just use a valid squared matrix saved in a CSV file
+```
+curl -F 'file=@/path/matrix.csv' "localhost:8080/echo"
 ```
