@@ -2,6 +2,7 @@ package main
 
 import "strconv"
 
+// Sum is reponsible to sum the matrix elements and return the result as string
 func Sum(records [][]string) (string, error) {
 
 	var sum = 0

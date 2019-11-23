@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// Invert is reponsible to invert the matrix and return the result as string
 func Invert(records [][]string) string {
 
 	// create the new empty matrix

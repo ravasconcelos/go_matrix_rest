@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// Echo just returns the matrix in string format
 func Echo(records [][]string) string {
 
 	var response string

@@ -2,6 +2,7 @@ package main
 
 import "strconv"
 
+// Multiply is reponsible to multiply the matrix elements and return the result as string
 func Multiply(records [][]string) (string, error) {
 
 	var product int64 = 1

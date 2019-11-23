@@ -54,12 +54,18 @@ Run web server
 go run .
 ```
 
-Send request
+Send request, for example
 ```
-curl -F 'file=@matrix.csv' "localhost:8080/echo"
+curl -F 'file=@/path/matrix.csv' "localhost:8080/echo"
 ```
 
-Test the project
+Run Unit Tests
 ```
 go test
+```
+
+Run Unit Tests
+```
+cd functional_testing
+./send_requests.sh
 ```

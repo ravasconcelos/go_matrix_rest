@@ -6,6 +6,9 @@ import (
 	"strings"
 )
 
+// ValidateMatrix trims the elements and perform two validations
+// 1) checks if it is a squared matrix
+// 2) checks if the matrix contains only integers
 func ValidateMatrix(matrix [][]string) error {
 
 	err1 := validateSquaredMatrix(matrix)

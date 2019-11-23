@@ -11,9 +11,12 @@ import (
 // Send request with:
 //		curl -F 'file=@/path/matrix.csv' "localhost:8080/echo"
 //      or
-//		curl -F 'file=@assets/matrix.csv' "localhost:8080/echo"
-// Test with
+//		curl -F 'file=@funtional_testing/matrix.csv' "localhost:8080/echo"
+// Run Unit Tests
 //		go test
+// Run Functional Tests
+//		cd functional_tests
+//      ./send_requests.sh
 func main() {
 	// Change the port if needed
 	var HTTP_PORT = "8080"

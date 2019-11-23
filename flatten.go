@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// Flatten is reponsible to convert the matrix to a flat array and return the result as string
 func Flatten(records [][]string) string {
 
 	var firstRow = false
